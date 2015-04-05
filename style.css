@@ -1,0 +1,17 @@
+main .top_container table{border:1px solid black;}
+main .top_container th, td{ border:1px solid black;
+                    text-align: center;
+                    font-size: 24px;
+}
+.red_message {color: red;}
+
+main .student_ave_container table {
+    border:1px solid black;
+    table-layout: fixed;
+    width:1050px;}
+main .student_ave_container th, td {
+    border:1px solid black;
+    overflow: hidden;
+    width: 150px;
+}
+
