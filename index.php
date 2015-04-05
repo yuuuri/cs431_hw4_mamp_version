@@ -7,18 +7,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
         <title>Yuri's hw4</title>
         <meta name = "author" content="Yuri Van Steenburg" />
         <link rel= "stylesheet" type="text/css" href="style.css" />
-    </head>
-    <body>
+</head>
+<body>
 
-        <header>
-        </header>
+<header>
+</header>
 
-        <main>
-            <div class = "top_container">
+    <main>
+        <div class = "top_container">
             <h1> Student Records </h1>
 
             <?php
@@ -49,16 +49,6 @@
                     echo '<p>returned no row from query! existing the program</p>';
                     exit;
                 } else {
-                    //format output using html to display data in a table format
-				            //formats the table with 1 pixel thick, black colored borders
-                    /*echo  '<style >
-                      table, th, td
-                        {
-                            border:1px solid black;
-                        }
-                    </style>';*/
-    
-
 
                     //prepares table
                     echo '<table>
@@ -81,8 +71,8 @@
                 //$result_cwids->free();
                 mysqli_close($link);
             ?>
-            </div>
-            <div class = "mid_container">
+        </div>
+        <div class = "mid_container">
                 <h2>View Average Score For A Given Student</h2>
                 <form action="view_avg_for_student.php" method="POST">
                         <b>Enter CWID and click submit: </b> 
@@ -96,22 +86,19 @@
                     unset($_SESSION['message']); // clear the value so that it doesn't display again
                 ?>
 
+        </div>
 
-
-            </div>
-
-            <div class = "bottom_container">
+        <div class = "bottom_container">
                 <h2>Average and Standard Deviation of midterm and final scores</h2>
                 <form action = "tests_stats.php" method="post">
                     <input type = "submit" id = "stats_submit" />
                 </form>            
-            </div>
-        </main>
+        </div>
+    </main>
 
+<footer>
+</footer>
 
-        <footer>
-        </footer>
-
-    </body>
+</body>
 </html>
 
